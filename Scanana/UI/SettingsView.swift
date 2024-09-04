@@ -13,12 +13,14 @@ struct SettingsView: View {
     @Environment(\.dismissWindow) var dismiss
 
     var body: some View {
-        Text("HI!")
-            .onAppear {
-                if closeIfPermissionGranted && CGPreflightScreenCaptureAccess() {
-                    dismiss.callAsFunction()
-                }
+        List {
+        }
+        .navigationTitle("Settings")
+        .onAppear {
+            if closeIfPermissionGranted && CGPreflightScreenCaptureAccess() {
+                dismiss.callAsFunction()
             }
+        }
     }
 }
 

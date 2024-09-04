@@ -12,7 +12,9 @@ struct ContentView: View {
 
     var body: some View {
         Button("Capture") {
-            let image = ScreenCapture.captureRegionImage()
+            Task {
+                await Scanner.scan()
+            }
         }
 
         Button("Open Settings") {
