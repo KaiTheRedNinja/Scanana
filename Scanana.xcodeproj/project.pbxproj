@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9386CE722C888CCC00C87316 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 9386CE712C888CCC00C87316 /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9386CE412C88815D00C87316 /* Scanana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9386CE722C888CCC00C87316 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Scanana;
 			packageProductDependencies = (
+				9386CE712C888CCC00C87316 /* KeyboardShortcuts */,
 			);
 			productName = Scanana;
 			productReference = 9386CE412C88815D00C87316 /* Scanana.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 9386CE382C88815D00C87316;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9386CE702C888CCC00C87316 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9386CE422C88815D00C87316 /* Products */;
 			projectDirPath = "";
@@ -319,6 +328,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9386CE702C888CCC00C87316 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9386CE712C888CCC00C87316 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9386CE702C888CCC00C87316 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9386CE392C88815D00C87316 /* Project object */;
 }
