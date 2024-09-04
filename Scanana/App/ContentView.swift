@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.openWindow) var openWindow
+
     var body: some View {
         Button("Capture") {
+            let image = ScreenCapture.captureRegionImage()
         }
 
-        Button("Quit") {
+        Button("Open Settings") {
+            openWindow.callAsFunction(id: "settings")
+        }
+        .keyboardShortcut(.init(","), modifiers: .command)
+
+        Divider()
+
+        Button("Quit Scanana") {
+            NSApplication.shared.terminate(self)
         }
         .keyboardShortcut(.init("q"), modifiers: .command)
     }
